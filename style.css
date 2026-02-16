@@ -9,7 +9,7 @@ body {
 
 .quiz-container {
     background: white;
-    width: 400px;
+    width: 420px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px gray;
@@ -18,6 +18,12 @@ body {
 
 h1 {
     color: #333;
+}
+
+#timer {
+    font-size: 16px;
+    color: #e74c3c;
+    margin-bottom: 10px;
 }
 
 #question {
@@ -41,7 +47,15 @@ h1 {
     background-color: #2980b9;
 }
 
-#nextBtn {
+.option.correct {
+    background-color: #2ecc71;
+}
+
+.option.wrong {
+    background-color: #e74c3c;
+}
+
+#nextBtn, #restartBtn {
     margin-top: 15px;
     padding: 10px 20px;
     background-color: #2ecc71;
@@ -51,8 +65,9 @@ h1 {
     cursor: pointer;
 }
 
-#nextBtn:hover {
-    background-color: #27ae60;
+#restartBtn {
+    display: none;
+    background-color: #9b59b6;
 }
 
 #scoreBox {
@@ -60,4 +75,3 @@ h1 {
     font-size: 20px;
     font-weight: bold;
 }
-
