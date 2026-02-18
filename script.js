@@ -1,4 +1,4 @@
-const users = {user id: "student", password: "123456" };
+const users = { admin: "1234", student: "python" };
 
 let questions = [
  {q:"Python is a ___ language.", o:["Compiled","Interpreted","Binary","Machine"], a:1},
