@@ -1,28 +1,16 @@
 body {
-    font-family: Arial;
-    background: #f0f4f8;
+    font-family: Arial, sans-serif;
+    background: #eef2f3;
     text-align: center;
 }
 
-.login-box, .quiz-container {
-    background: white;
-    width: 350px;
-    margin: 60px auto;
+.quiz-container {
+    background: #fff;
+    width: 420px;
+    margin: 50px auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px #aaa;
-}
-
-input {
-    width: 90%;
-    padding: 10px;
-    margin: 8px 0;
-}
-
-button {
-    padding: 10px 20px;
-    margin-top: 10px;
-    cursor: pointer;
 }
 
 .option {
@@ -30,14 +18,25 @@ button {
     width: 90%;
     margin: 8px auto;
     padding: 10px;
-    border: none;
     background: #ddd;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .option.correct { background: #8bc34a; }
 .option.wrong { background: #f44336; }
 
-#quizBox { display: none; }
-#restartBtn { display: none; }
-#timer { font-weight: bold; color: red; }
+#restartBtn, #quizArea {
+    display: none;
+}
+
+#timer {
+    color: red;
+    font-weight: bold;
+}
+
+#qno {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
